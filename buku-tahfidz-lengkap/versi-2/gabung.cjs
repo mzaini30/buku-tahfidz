@@ -3,12 +3,18 @@ const fs = require("fs").promises;
 
 async function mergePDFs() {
   let list_file = [];
-  for (let n = 0; n < 2; n++) {
-    list_file.push("./list-hapalan-yang-tidak-lancar.pdf");
+
+  // for (let n = 0; n < 2; n++) {
+  //   list_file.push("./list-hapalan-yang-tidak-lancar.pdf");
+  // }
+  // for (let n = 0; n < 6; n++) {
+  //   list_file.push("./ziyadah.pdf");
+  // }
+
+  for (let n = 0; n < 3; n++) {
+    list_file.push("./kosong.pdf");
   }
-  for (let n = 0; n < 6; n++) {
-    list_file.push("./ziyadah.pdf");
-  }
+  list_file.push("./sampul.pdf");
 
   // Daftar file PDF yang akan digabungkan
   const pdfFiles = list_file; // Gantilah dengan nama file Anda
@@ -26,7 +32,7 @@ async function mergePDFs() {
 
   // Simpan dokumen yang digabungkan ke file baru
   const mergedPdfBytes = await mergedPdf.save();
-  await fs.writeFile("isi-bergabung.pdf", mergedPdfBytes);
+  await fs.writeFile("sampul-bergabung.pdf", mergedPdfBytes);
 }
 
 mergePDFs()
