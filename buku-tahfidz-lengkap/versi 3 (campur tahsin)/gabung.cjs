@@ -4,8 +4,11 @@ const fs = require("fs").promises;
 async function mergePDFs() {
   let list_file = [];
 
+  for (let n = 0; n < 32; n++) {
+    list_file.push("./tahsin.pdf");
+  }
   for (let n = 0; n < 3; n++) {
-    list_file.push("./list-hapalan-yang-tidak-lancar.pdf");
+    list_file.push("./hapalan tidak lancar.pdf");
   }
   for (let n = 0; n < 6; n++) {
     list_file.push("./ziyadah-kiri.pdf");
