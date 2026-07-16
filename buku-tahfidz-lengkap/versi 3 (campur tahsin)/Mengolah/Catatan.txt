@@ -17,3 +17,21 @@ loop (8 kali){
 }
 
 6. Tahsin x 11
+
+================= PROMPT =================
+
+Jadikan halaman-halaman berikut menjadi satu file PDF:
+
+1. Aturan Pengisian
+
+loop (12 kali){
+  2. Ziyadah kanan
+  3. Ziyadah kiri
+}
+
+loop (8 kali){
+  4. Ujian kanan
+  5. Ujian kiri
+}
+
+6. Tahsin x 11
